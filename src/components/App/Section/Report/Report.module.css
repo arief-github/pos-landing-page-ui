@@ -1,0 +1,30 @@
+.report__display {
+    display: flex;
+    margin-top: 100px;
+    gap: 129px;
+}
+
+.rectangle {
+    position: relative;
+    width: 490px;
+    height: 458px;
+    background: linear-gradient(127.1deg, #BBD7FF 3.05%, #3A81E4 102.74%);
+    border-radius: 39px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 920px) {
+    .report__display {
+        flex-direction: column;
+    }
+
+    .rectangle {
+        order: 1;
+    }
+
+    .rectangle, .rectangle img {
+        width: 90%;
+    }
+}

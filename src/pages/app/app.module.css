@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --deep-blue: #083D8B ;
+    --orange: #FBB42F;
+    --dark : #1E1C1C;
+
+    /* font-family */
+    --font-base: Inter;
+
+    /* font weight */
+    --font-regular: 400;
+    --font-bold: 700;
+
+    /* font size */
+    --font-sm: 12px;
+    --font-md: 16px;
+    --font-lg: 18px;
+    --font-xlg: 24px;
+
+    /* heading */
+    --h1 : 42px;
+    --h2 : 32px;
+}
+
+.App {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 210px;
+    grid-template-areas: 
+        "navbar navbar navbar"
+        "hero hero hero"
+        "testimonials testimonials testimonials"
+        "sales sales sales"
+        "report report report"
+        "features features features"
+        "price price price"
+        "contact contact contact"
+        "footer footer footer";
+    overflow: hidden;
+    font-family: var(--font-base), Courier, monospace;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.hero {
+    grid-area: hero;
+}
+
+.testimonials {
+    grid-area: testimonials;
+}
+
+.sales {
+    grid-area: sales;
+}
+
+.report {
+    grid-area: report;
+}
+
+.features {
+    grid-area: features;
+}
+
+.price {
+    grid-area: price;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+/* for section */
+section {
+    margin: 0 125px 0 164px;
+}

@@ -1,0 +1,90 @@
+/* variables can be found in /pages/App/app.module.css */
+
+.Nav {
+    display: flex;
+    margin: 0 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Nav_ul {
+    display: flex;
+    margin: 0 auto;
+    gap: 40px;
+    list-style: none;
+}
+
+.button {
+    width: 168px;
+    cursor: pointer;
+    height: 39px;
+    border-radius: 8px;
+    padding:9px;
+    background-color: #fff;
+    color: var(--deep-blue);
+    border: 2px solid  var(--deep-blue);
+    font-weight: var(--font-regular);
+    font-size: var(--font-md);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--deep-blue);
+    color: #fff;
+}   
+
+.active {
+    border-bottom: 1px solid var(--deep-blue) ;
+    width: 16px;
+}
+
+.hide {
+    display: none;
+}
+
+.image {
+    max-width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .Nav_ul {
+        z-index: 1;
+        background-color: var(--deep-blue);
+        position: absolute;
+        opacity: 100%;
+        right: 0;
+        top: 100px;
+        height: 100vh;
+        font-weight: var(--font-bold);
+        color: #fff;
+        font-size: var(--h1);
+        margin-top: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        width: 100%;
+    }  
+
+    .Nav_icon {
+        cursor: pointer;
+        width: 44px;
+        height: 44px;
+    }
+
+    .hidden {
+        z-index: -1;
+        opacity: 0%;
+    }
+
+    .image  {
+        display: none;
+    }
+
+    .hide {
+        display: block;
+    }
+}

@@ -1,0 +1,54 @@
+.contactsales__display{
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../../../../../public/images/contact/bg.svg);
+    margin-top: 100px;
+    position: relative;
+    height: 236px;
+}
+
+.contactsales__display h2 {
+    font-size: var(--h2);
+    font-weight: var(--font-bold);
+    color: white;
+}
+
+.contactsales__display img {
+    max-width: 100%;
+}
+
+.abs_img_1 {
+    position: absolute;
+    top: 26.8%;
+    left: 49.8%;
+}
+
+.abs_img_2 {
+    position: absolute;
+    top: -18.9%;
+    left: 74.4%;
+}
+
+@media screen and (max-width: 920px) {
+    .contactsales__display h2 {
+        margin-right: 340px;
+    }   
+
+    .abs_img_2 {     
+        top: -18.9%;
+        left: 64.4%;
+    }
+
+    .abs_img_1 {
+        top: 26.8%;
+        left: 59.8%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .contactsales__display h2 {
+        margin-right: 340px;
+        font-size: var(--font-md);
+    }
+}

@@ -1,0 +1,31 @@
+  .card__title {
+    margin-bottom: 50px;
+  }
+  
+  .card__form {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .card__form input[type="text"],
+  .card__form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid grey;
+  }
+  
+  .card__form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card__form button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
